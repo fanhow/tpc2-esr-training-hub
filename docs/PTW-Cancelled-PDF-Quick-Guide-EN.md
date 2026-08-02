@@ -1,4 +1,4 @@
-# PTW Cancelled PDF｜4 steps
+# Create Printed PTW PDF｜4 steps
 
 The tool checks each PTW Status: `Cancelled` creates `-PRT.pdf`; every other status is renamed to `-CHK.pdf` for review.
 

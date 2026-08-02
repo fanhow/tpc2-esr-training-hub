@@ -52,8 +52,8 @@
     <a class="oaic-task-card oaic-task-card--ptw" href="PTW-Cancelled-PDF-Quick-Guide-EN/">
       <span class="oaic-task-card__step">5</span>
       <span class="oaic-task-card__icon" aria-hidden="true">📄</span>
-      <strong>PTW Cancelled PDF</strong>
-      <small>Create -PRT / flag -CHK</small>
+      <strong>Create Printed PTW PDF</strong>
+      <small>Cancelled → -PRT · Others → -CHK</small>
     </a>
   </div>
 
@@ -98,7 +98,7 @@
         <option>Step 2 - 3DLA MoM</option>
         <option>Step 3 - DPR</option>
         <option>Step 4 - ESR Training</option>
-        <option>Step 5 - PTW Cancelled PDF</option>
+        <option>Step 5 - Create Printed PTW PDF</option>
         <option>Website / General</option>
       </select>
     </label>

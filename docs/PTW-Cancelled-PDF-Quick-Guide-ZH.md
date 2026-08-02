@@ -1,4 +1,4 @@
-# PTW Cancelled PDF｜4 步完成
+# 產生圖片化 PTW PDF｜4 步完成
 
 自動檢查 PTW Status：`Cancelled` 產出 `-PRT.pdf`，其他狀態改為 `-CHK.pdf` 待確認。
 
