@@ -1065,7 +1065,7 @@ body {
 .oaic-task-grid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   margin-top: 1.25rem;
 }
 
@@ -1144,6 +1144,10 @@ body {
 
 .oaic-task-card--training {
   border-top: 5px solid var(--oaic-accent) !important;
+}
+
+.oaic-task-card--ptw {
+  border-top: 5px solid #4d6fa8 !important;
 }
 
 .oaic-language-note {
@@ -1458,5 +1462,300 @@ body {
 
   .oaic-visual-step__icon {
     display: none;
+  }
+}
+
+/* ESR Training beginner guide */
+
+.oaic-cli-basics {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 1rem 0;
+}
+
+.oaic-cli-basics > div {
+  background: #f5f8f9;
+  border: 1px solid var(--oaic-line);
+  border-radius: 10px;
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.85rem 1rem;
+}
+
+.oaic-cli-basics strong {
+  color: var(--oaic-primary);
+  font-size: 0.78rem;
+}
+
+.oaic-cli-basics span {
+  color: var(--oaic-steel);
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+
+.oaic-cli-basics kbd {
+  background: #fff;
+  border: 1px solid rgba(10, 44, 61, 0.22);
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  color: var(--oaic-primary);
+  padding: 0.08rem 0.3rem;
+}
+
+.oaic-zoom-hint {
+  color: var(--oaic-steel);
+  font-size: 0.7rem;
+  margin: -0.8rem 0 1.2rem;
+  text-align: center;
+}
+
+.oaic-daily-card {
+  background: linear-gradient(135deg, #eef8fb, #f8fbfc);
+  border: 2px solid rgba(29, 111, 122, 0.28);
+  border-left: 7px solid var(--oaic-teal);
+  border-radius: 12px;
+  box-shadow: 0 10px 28px rgba(10, 44, 61, 0.08);
+  margin: 1.4rem 0 1.8rem;
+  padding: 1rem 1.2rem;
+}
+
+.md-typeset .oaic-daily-card h3 {
+  color: var(--oaic-primary);
+  font-size: 1.05rem;
+  margin: 0 0 0.55rem;
+}
+
+.oaic-daily-card ol {
+  margin-bottom: 0;
+}
+
+.oaic-step-index {
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 1rem 0 2rem;
+}
+
+.md-typeset .oaic-step-index a {
+  align-items: center;
+  background: #fff;
+  border: 1px solid var(--oaic-line);
+  border-left: 5px solid var(--oaic-teal);
+  border-radius: 9px;
+  color: var(--oaic-primary);
+  display: grid;
+  gap: 0.2rem 0.8rem;
+  grid-template-columns: 78px minmax(0, 1fr);
+  min-height: 64px;
+  padding: 0.65rem 0.8rem;
+  text-decoration: none;
+  transition: border-color 0.16s ease, box-shadow 0.16s ease, transform 0.16s ease;
+}
+
+.md-typeset .oaic-step-index a:hover {
+  border-color: var(--oaic-accent);
+  box-shadow: 0 8px 20px rgba(10, 44, 61, 0.11);
+  color: var(--oaic-primary);
+  transform: translateY(-1px);
+}
+
+.oaic-step-index strong {
+  align-items: center;
+  background: var(--oaic-primary);
+  border-radius: 999px;
+  color: #fff;
+  display: inline-flex;
+  font-size: 0.68rem;
+  grid-row: 1 / span 2;
+  justify-content: center;
+  min-height: 30px;
+  padding: 0.2rem 0.45rem;
+}
+
+.oaic-step-index span {
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.oaic-step-index small {
+  color: var(--oaic-steel);
+  font-size: 0.63rem;
+  font-weight: 600;
+}
+
+.md-typeset .oaic-step-index a.oaic-step-index--danger {
+  background: #fff8f4;
+  border-left-color: var(--oaic-accent);
+}
+
+.oaic-step-index--danger strong {
+  background: var(--oaic-accent);
+}
+
+.oaic-command-step {
+  background: #fff;
+  border: 1px solid var(--oaic-line);
+  border-top: 5px solid var(--oaic-teal);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(10, 44, 61, 0.07);
+  margin: 1.3rem 0 2rem;
+  padding: 0.2rem 1.2rem 1.2rem;
+  scroll-margin-top: 5.5rem;
+}
+
+.oaic-command-step--daily {
+  border-top-color: #2f7eaa;
+}
+
+.oaic-command-step--danger {
+  border-top-color: var(--oaic-accent);
+}
+
+.md-typeset .oaic-command-step > h2 {
+  font-size: 1.28rem;
+  margin: 1rem 0 0.75rem;
+}
+
+.oaic-command-meta {
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-bottom: 0.9rem;
+}
+
+.oaic-command-meta p {
+  background: #f5f8f9;
+  border-radius: 8px;
+  display: grid;
+  gap: 0.2rem;
+  margin: 0;
+  padding: 0.7rem 0.8rem;
+}
+
+.oaic-command-step--danger .oaic-command-meta p {
+  background: #fff8f4;
+}
+
+.oaic-command-meta strong {
+  color: var(--oaic-teal);
+  font-size: 0.62rem;
+  letter-spacing: 0.04em;
+}
+
+.oaic-command-step--danger .oaic-command-meta strong {
+  color: var(--oaic-accent-dark);
+}
+
+.oaic-command-meta span {
+  color: var(--oaic-ink);
+  font-size: 0.7rem;
+  line-height: 1.45;
+}
+
+.oaic-command-step .oaic-step-shot {
+  margin-bottom: 1.1rem;
+  margin-top: 0.8rem;
+}
+
+.oaic-step-shot {
+  cursor: zoom-in;
+}
+
+.oaic-step-shot:focus-visible {
+  outline: 3px solid var(--oaic-accent);
+  outline-offset: 3px;
+}
+
+body.oaic-zoom-open {
+  overflow: hidden;
+}
+
+.oaic-image-zoom {
+  background: rgba(2, 14, 21, 0.94);
+  display: grid;
+  inset: 0;
+  padding: 4.5rem 1rem 1rem;
+  place-items: start center;
+  position: fixed;
+  z-index: 10000;
+}
+
+.oaic-image-zoom[hidden] {
+  display: none;
+}
+
+.oaic-image-zoom__viewport {
+  height: calc(100vh - 5.5rem);
+  overflow: auto;
+  text-align: center;
+  width: 100%;
+}
+
+.oaic-image-zoom__image {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 18px 52px rgba(0, 0, 0, 0.42);
+  max-width: min(94vw, 1600px);
+  transform-origin: top center;
+  transition: transform 0.12s ease;
+}
+
+.oaic-image-zoom__toolbar {
+  align-items: center;
+  display: flex;
+  gap: 0.45rem;
+  left: 50%;
+  position: fixed;
+  top: 0.8rem;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.oaic-image-zoom__toolbar button {
+  background: #fff;
+  border: 0;
+  border-radius: 7px;
+  color: var(--oaic-primary);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 900;
+  min-height: 42px;
+  min-width: 46px;
+  padding: 0.5rem 0.7rem;
+}
+
+.oaic-image-zoom__toolbar button:hover,
+.oaic-image-zoom__toolbar button:focus-visible {
+  background: var(--oaic-accent);
+  color: #fff;
+  outline: none;
+}
+
+@media screen and (max-width: 760px) {
+  .oaic-cli-basics,
+  .oaic-command-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .oaic-step-index {
+    grid-template-columns: 1fr;
+  }
+
+  .oaic-command-step {
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+  }
+
+  .oaic-image-zoom {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .oaic-image-zoom__toolbar button {
+    min-width: 42px;
+    padding-left: 0.55rem;
+    padding-right: 0.55rem;
   }
 }

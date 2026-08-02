@@ -22,6 +22,9 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/image-zoom.js
+
 nav:
   - Home: index.md
   - Step 0 Setup:
@@ -39,6 +42,9 @@ nav:
   - ESR Training:
       - English: ESR-Training-AUTO-Quick-Guide-EN.md
       - 中文: ESR-Training-AUTO-Quick-Guide-ZH.md
+  - PTW Cancelled PDF:
+      - English: PTW-Cancelled-PDF-Quick-Guide-EN.md
+      - 中文: PTW-Cancelled-PDF-Quick-Guide-ZH.md
 
 
 

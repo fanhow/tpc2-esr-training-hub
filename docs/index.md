@@ -48,6 +48,13 @@
       <strong>ESR Training</strong>
       <small>P / CP training workflow</small>
     </a>
+
+    <a class="oaic-task-card oaic-task-card--ptw" href="PTW-Cancelled-PDF-Quick-Guide-EN/">
+      <span class="oaic-task-card__step">5</span>
+      <span class="oaic-task-card__icon" aria-hidden="true">📄</span>
+      <strong>PTW Cancelled PDF</strong>
+      <small>Create -PRT / flag -CHK</small>
+    </a>
   </div>
 
   <div class="oaic-language-note">
@@ -91,6 +98,7 @@
         <option>Step 2 - 3DLA MoM</option>
         <option>Step 3 - DPR</option>
         <option>Step 4 - ESR Training</option>
+        <option>Step 5 - PTW Cancelled PDF</option>
         <option>Website / General</option>
       </select>
     </label>
