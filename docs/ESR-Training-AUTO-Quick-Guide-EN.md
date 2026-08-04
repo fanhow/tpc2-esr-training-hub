@@ -74,12 +74,12 @@
 
 <div class="oaic-command-meta">
   <p><strong>WHEN</strong><span>Step 1 added new white pending rows.</span></p>
-  <p><strong>DO</strong><span>Type <code>2</code>, press Enter, then press Enter again for Chrome.</span></p>
+  <p><strong>DO</strong><span>Type <code>2</code>, press Enter, then choose Chrome, Edge, or Firefox.</span></p>
   <p><strong>RESULT</strong><span>The candidate receives ESR Training Hub Site access.</span></p>
 </div>
 
 1. Type `2`, then press **Enter**.
-2. At the browser question, press **Enter** for Chrome. Type `E` only for Edge.
+2. At the browser question, press **Enter** for Chrome, type `E` for Edge, or type `F` for Firefox.
 3. Do not use the mouse or keyboard while it is running.
 4. `完成 SharePoint Site access：成功 ...` means “Site access completed” and confirms it is finished.
 

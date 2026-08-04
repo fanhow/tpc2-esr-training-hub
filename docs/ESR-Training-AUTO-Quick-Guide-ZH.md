@@ -74,12 +74,12 @@
 
 <div class="oaic-command-meta">
   <p><strong>什麼時候做</strong><span>Step 1 新增了白底待處理人員。</span></p>
-  <p><strong>你要做什麼</strong><span>輸入 <code>2</code>，按 Enter；Chrome 直接再按 Enter。</span></p>
+  <p><strong>你要做什麼</strong><span>輸入 <code>2</code>，按 Enter；再選擇 Chrome、Edge 或 Firefox。</span></p>
   <p><strong>會產生什麼</strong><span>候選人取得 ESR Training Hub Site access。</span></p>
 </div>
 
 1. 輸入 `2`，按 **Enter**。
-2. 看到選擇瀏覽器：直接按 **Enter** 使用 Chrome；要用 Edge 才輸入 `E`。
+2. 看到選擇瀏覽器：直接按 **Enter** 使用 Chrome；輸入 `E` 使用 Edge；輸入 `F` 使用 Firefox。
 3. 執行時不要碰滑鼠或鍵盤。
 4. 看到 `完成 SharePoint Site access：成功 ...` 代表完成。
 

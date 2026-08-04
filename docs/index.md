@@ -3,15 +3,15 @@
     <p class="oaic-kicker">OAIC INTERNAL GUIDE</p>
     <h1 class="oaic-hero-title">
       <span class="oaic-title-light">ESR AutoDoc</span><br>
-      <span class="oaic-title-dark">Choose. Follow. Done.</span>
+      <span class="oaic-title-dark">Automation for daily tasks</span>
     </h1>
-    <p class="oaic-lede">選擇工作，跟著圖片一步一步完成。</p>
+    <p class="oaic-lede">日常任務自動化。</p>
   </div>
 </div>
 
 <section class="oaic-section oaic-quick-start">
   <p class="oaic-section__eyebrow">START HERE</p>
-  <h2>What do you want to do?</h2>
+  <h2>Automation modules</h2>
 
   <div class="oaic-task-grid">
     <a class="oaic-task-card oaic-task-card--setup" href="Step-0-SharePoint-OneDrive-Setup-EN/">
@@ -58,7 +58,7 @@
   </div>
 
   <div class="oaic-language-note">
-    Each guide has <strong>English</strong> and <strong>中文</strong> in the top menu.
+    Each module is available in <strong>English</strong> and <strong>中文</strong>.
   </div>
 </section>
 
