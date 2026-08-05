@@ -8,14 +8,14 @@
   <div class="oaic-visual-step__number">1</div>
   <div class="oaic-visual-step__icon" aria-hidden="true">🖱️</div>
   <div>
-    <h2>確認檔案後，雙擊 .cmd</h2>
-    <code>Process Cancelled PTW - Run.cmd</code>
+    <h2>確認檔案後，雙擊黃色 PTW 圖標</h2>
+    <code>00 - Run PTW PDF Tool</code>
   </div>
 </section>
 
-![執行前：一般 PTW 及待重新檢查的 CHK 檔案](assets/ptw/09-files-before.png){ .oaic-step-shot .oaic-step-shot--tall loading=lazy }
+![在 PTW 資料夾雙擊黃色執行圖標](assets/ptw/01-run-command.png){ .oaic-step-shot loading=lazy }
 
-![PTW 資料夾中的執行檔位置](assets/ptw/01-run-command.png){ .oaic-step-shot loading=lazy }
+![執行前：一般 PTW 及待重新檢查的 CHK 檔案](assets/ptw/09-files-before.png){ .oaic-step-shot .oaic-step-shot--tall loading=lazy }
 
 <section class="oaic-visual-step">
   <div class="oaic-visual-step__number">2</div>

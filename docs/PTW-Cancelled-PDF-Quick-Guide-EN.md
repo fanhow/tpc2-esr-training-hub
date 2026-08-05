@@ -8,14 +8,14 @@ One run performs two checks: new PTW files and existing `-CHK.pdf` files.
   <div class="oaic-visual-step__number">1</div>
   <div class="oaic-visual-step__icon" aria-hidden="true">🖱️</div>
   <div>
-    <h2>Check the files, then double-click the .cmd file</h2>
-    <code>Process Cancelled PTW - Run.cmd</code>
+    <h2>Check the files, then double-click the yellow PTW icon</h2>
+    <code>00 - Run PTW PDF Tool</code>
   </div>
 </section>
 
-![Before: standard PTW and CHK files waiting for recheck](assets/ptw/09-files-before.png){ .oaic-step-shot .oaic-step-shot--tall loading=lazy }
+![Double-click the yellow run icon in the PTW folder](assets/ptw/01-run-command.png){ .oaic-step-shot loading=lazy }
 
-![Run command in the PTW folder](assets/ptw/01-run-command.png){ .oaic-step-shot loading=lazy }
+![Before: standard PTW and CHK files waiting for recheck](assets/ptw/09-files-before.png){ .oaic-step-shot .oaic-step-shot--tall loading=lazy }
 
 <section class="oaic-visual-step">
   <div class="oaic-visual-step__number">2</div>
