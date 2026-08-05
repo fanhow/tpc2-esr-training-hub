@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#create-printed-ptw-pdf4-steps" class="md-skip">
+        <a href="#create-printed-ptw-pdf5-steps" class="md-skip">
           Skip to content
         </a>
       
@@ -1154,24 +1154,25 @@
   
 
 
-<h1 id="create-printed-ptw-pdf4-steps">Create Printed PTW PDF｜4 steps<a class="headerlink" href="#create-printed-ptw-pdf4-steps" title="Permanent link">&para;</a></h1>
-<p>The tool checks each PTW Status: <code>Cancelled</code> creates <code>-PRT.pdf</code>; every other status is renamed to <code>-CHK.pdf</code> for review.</p>
+<h1 id="create-printed-ptw-pdf5-steps">Create Printed PTW PDF｜5 steps<a class="headerlink" href="#create-printed-ptw-pdf5-steps" title="Permanent link">&para;</a></h1>
+<p>One run performs two checks: new PTW files and existing <code>-CHK.pdf</code> files.</p>
 <div class="oaic-visual-steps">
 <section class="oaic-visual-step">
 <div class="oaic-visual-step__number">1</div>
 <div aria-hidden="true" class="oaic-visual-step__icon">🖱️</div>
 <div>
-    <h2>Double-click the .cmd file in the PTW folder</h2>
+    <h2>Check the files, then double-click the .cmd file</h2>
     <code>Process Cancelled PTW - Run.cmd</code>
   </div>
 </section>
+<p><img alt="Before: standard PTW and CHK files waiting for recheck" class="oaic-step-shot oaic-step-shot--tall" loading="lazy" src="../assets/ptw/09-files-before.png" /></p>
 <p><img alt="Run command in the PTW folder" class="oaic-step-shot" loading="lazy" src="../assets/ptw/01-run-command.png" /></p>
 <section class="oaic-visual-step">
 <div class="oaic-visual-step__number">2</div>
 <div aria-hidden="true" class="oaic-visual-step__icon">🔎</div>
 <div>
-    <h2>Wait while the tool checks each Status</h2>
-    <p>The window shows the file name, progress and detected status.</p>
+    <h2>Wait for Step 1 to check new PTW files</h2>
+    <p>The window shows each file name, progress and Status.</p>
   </div>
 </section>
 <p><img alt="The tool scans each PTW Status" class="oaic-step-shot" loading="lazy" src="../assets/ptw/02-status-scan.png" /></p>
@@ -1179,33 +1180,41 @@
 <div class="oaic-visual-step__number">3</div>
 <div aria-hidden="true" class="oaic-visual-step__icon">✅</div>
 <div>
-    <h2>Cancelled creates -PRT.pdf</h2>
-    <p>The original PDF is kept; the new file is an image-only PDF.</p>
+    <h2>Review the Step 1 result</h2>
+    <p><strong>Cancelled</strong> → creates <code>-PRT.pdf</code><br><strong>Other status</strong> → renamed to <code>-CHK.pdf</code></p>
   </div>
 </section>
 <p><img alt="Cancelled status shown on a PTW form" class="oaic-step-shot" loading="lazy" src="../assets/ptw/03-cancelled-status.png" /></p>
+<p><img alt="PTW Status processing in progress" class="oaic-step-shot" loading="lazy" src="../assets/ptw/04-processing.png" /></p>
 <section class="oaic-visual-step oaic-visual-step--check">
 <div class="oaic-visual-step__number">4</div>
-<div aria-hidden="true" class="oaic-visual-step__icon">📁</div>
+<div aria-hidden="true" class="oaic-visual-step__icon">🔁</div>
 <div>
-    <h2>Check [DONE], [CHECK] and the output files</h2>
-    <p><strong>[DONE]</strong> = <code>-PRT.pdf</code> created｜<strong>[CHECK]</strong> = renamed to <code>-CHK.pdf</code></p>
+    <h2>Step 2 rechecks every -CHK.pdf</h2>
+    <p><strong>Now Cancelled</strong> → restores the original name and creates <code>-PRT.pdf</code><br><strong>Not Cancelled</strong> → keeps <code>-CHK.pdf</code></p>
   </div>
 </section>
-<p><img alt="PTW Status processing in progress" class="oaic-step-shot" loading="lazy" src="../assets/ptw/04-processing.png" /></p>
-<p><img alt="PTW processing summary with DONE and CHECK lists" class="oaic-step-shot oaic-step-shot--tall" loading="lazy" src="../assets/ptw/05-processing-summary.png" /></p>
-<div class="admonition warning">
-<p class="admonition-title">Known issue in this example</p>
-<p>The screenshot ends with <code>Failed</code>; the program is still being adjusted. For now, verify the <code>[DONE]</code> / <code>[CHECK]</code> lists and the actual <code>-PRT</code> / <code>-CHK</code> files.</p>
-</div>
-<p><img alt="PRT and CHK files after PTW processing" class="oaic-step-shot oaic-step-shot--tall" loading="lazy" src="../assets/ptw/06-output-files.png" /></p>
+<p><img alt="Step 2 rechecks each CHK Status" class="oaic-step-shot" loading="lazy" src="../assets/ptw/07-chk-recheck.png" /></p>
+<section class="oaic-visual-step oaic-visual-step--check">
+<div class="oaic-visual-step__number">5</div>
+<div aria-hidden="true" class="oaic-visual-step__icon">📋</div>
+<div>
+    <h2>Review the summary, then press any key to close</h2>
+    <p><strong>[DONE]</strong> = completed｜<strong>[CHECK]</strong> = not completed<br>The window stays open for review.</p>
+  </div>
+</section>
+<p><img alt="Step 1 and Step 2 processing summary" class="oaic-step-shot oaic-step-shot--tall" loading="lazy" src="../assets/ptw/08-final-summary.png" /></p>
+<p><img alt="After: original PTW and newly created PRT files" class="oaic-step-shot oaic-step-shot--tall" loading="lazy" src="../assets/ptw/10-files-after.png" /></p>
 </div>
 <details class="oaic-compact-details">
 <summary>Processing rules and optional mode</summary>
 <ul>
-<li>Processes only <code>TWSHXHV-PTW-####.pdf</code> files without an exact matching <code>-PRT.pdf</code>.</li>
-<li><code>Cancelled</code>: keeps the original PDF and creates an image-only <code>-PRT.pdf</code>.</li>
-<li>Other statuses: keeps the content and renames the file to <code>-CHK.pdf</code> for manual review.</li>
+<li>Step 1 checks <code>TWSHXHV-PTW-####.pdf</code> files without an exact matching <code>-PRT.pdf</code>.</li>
+<li>Step 1 <code>Cancelled</code>: keeps the original PDF and creates an image-only <code>-PRT.pdf</code>.</li>
+<li>Step 1 other status: keeps the content and renames the file to <code>-CHK.pdf</code>.</li>
+<li>Step 2 rechecks every <code>TWSHXHV-PTW-####-CHK.pdf</code>.</li>
+<li>A <code>-CHK.pdf</code> that is now <code>Cancelled</code>: restores the original name and creates an image-only <code>-PRT.pdf</code>.</li>
+<li>A <code>-CHK.pdf</code> that is not <code>Cancelled</code>: keeps its name and appears under <code>[CHECK]</code>.</li>
 <li>Existing files are never overwritten.</li>
 <li>Temporary PNG files use Windows <code>%TEMP%</code> and are removed when processing finishes.</li>
 <li>To open files one by one, run the PowerShell script with <code>-OpenEach</code>.</li>

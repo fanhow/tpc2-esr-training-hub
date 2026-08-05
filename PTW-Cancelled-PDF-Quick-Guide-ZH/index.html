@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ptw-pdf4" class="md-skip">
+        <a href="#ptw-pdf5" class="md-skip">
           Skip to content
         </a>
       
@@ -1152,24 +1152,25 @@
   
 
 
-<h1 id="ptw-pdf4">產生圖片化 PTW PDF｜4 步完成<a class="headerlink" href="#ptw-pdf4" title="Permanent link">&para;</a></h1>
-<p>自動檢查 PTW Status：<code>Cancelled</code> 產出 <code>-PRT.pdf</code>，其他狀態改為 <code>-CHK.pdf</code> 待確認。</p>
+<h1 id="ptw-pdf5">產生圖片化 PTW PDF｜5 步完成<a class="headerlink" href="#ptw-pdf5" title="Permanent link">&para;</a></h1>
+<p>一次執行兩輪檢查：處理新的 PTW，並重新檢查既有的 <code>-CHK.pdf</code>。</p>
 <div class="oaic-visual-steps">
 <section class="oaic-visual-step">
 <div class="oaic-visual-step__number">1</div>
 <div aria-hidden="true" class="oaic-visual-step__icon">🖱️</div>
 <div>
-    <h2>在 PTW 資料夾雙擊 .cmd</h2>
+    <h2>確認檔案後，雙擊 .cmd</h2>
     <code>Process Cancelled PTW - Run.cmd</code>
   </div>
 </section>
+<p><img alt="執行前：一般 PTW 及待重新檢查的 CHK 檔案" class="oaic-step-shot oaic-step-shot--tall" loading="lazy" src="../assets/ptw/09-files-before.png" /></p>
 <p><img alt="PTW 資料夾中的執行檔位置" class="oaic-step-shot" loading="lazy" src="../assets/ptw/01-run-command.png" /></p>
 <section class="oaic-visual-step">
 <div class="oaic-visual-step__number">2</div>
 <div aria-hidden="true" class="oaic-visual-step__icon">🔎</div>
 <div>
-    <h2>等待程式逐份檢查 Status</h2>
-    <p>畫面會顯示檔名、進度及目前狀態。</p>
+    <h2>等待第一輪檢查新 PTW</h2>
+    <p>畫面會顯示檔名、進度及 Status。</p>
   </div>
 </section>
 <p><img alt="程式逐份掃描 PTW Status" class="oaic-step-shot" loading="lazy" src="../assets/ptw/02-status-scan.png" /></p>
@@ -1177,33 +1178,41 @@
 <div class="oaic-visual-step__number">3</div>
 <div aria-hidden="true" class="oaic-visual-step__icon">✅</div>
 <div>
-    <h2>Cancelled 會建立 -PRT.pdf</h2>
-    <p>原始 PDF 保留；新檔為影像化 PDF。</p>
+    <h2>查看第一輪結果</h2>
+    <p><strong>Cancelled</strong> → 建立 <code>-PRT.pdf</code><br><strong>其他狀態</strong> → 改名為 <code>-CHK.pdf</code></p>
   </div>
 </section>
 <p><img alt="PTW 表單中的已取消 Cancelled 狀態" class="oaic-step-shot" loading="lazy" src="../assets/ptw/03-cancelled-status.png" /></p>
+<p><img alt="PTW Status 處理中" class="oaic-step-shot" loading="lazy" src="../assets/ptw/04-processing.png" /></p>
 <section class="oaic-visual-step oaic-visual-step--check">
 <div class="oaic-visual-step__number">4</div>
-<div aria-hidden="true" class="oaic-visual-step__icon">📁</div>
+<div aria-hidden="true" class="oaic-visual-step__icon">🔁</div>
 <div>
-    <h2>查看 [DONE]、[CHECK] 及輸出檔案</h2>
-    <p><strong>[DONE]</strong> = 已建立 <code>-PRT.pdf</code>｜<strong>[CHECK]</strong> = 已改名為 <code>-CHK.pdf</code></p>
+    <h2>第二輪會重新檢查 -CHK.pdf</h2>
+    <p><strong>已改為 Cancelled</strong> → 恢復原檔名並建立 <code>-PRT.pdf</code><br><strong>尚未 Cancelled</strong> → 保留 <code>-CHK.pdf</code></p>
   </div>
 </section>
-<p><img alt="PTW Status 處理中" class="oaic-step-shot" loading="lazy" src="../assets/ptw/04-processing.png" /></p>
-<p><img alt="PTW 處理結果摘要及 DONE CHECK 清單" class="oaic-step-shot oaic-step-shot--tall" loading="lazy" src="../assets/ptw/05-processing-summary.png" /></p>
-<div class="admonition warning">
-<p class="admonition-title">目前已知狀況</p>
-<p>圖中最後出現 <code>Failed</code>，程式仍在調整。請先依 <code>[DONE]</code>／<code>[CHECK]</code> 清單及實際 <code>-PRT</code>／<code>-CHK</code> 檔案確認結果。</p>
-</div>
-<p><img alt="PTW 處理後的 PRT 及 CHK 檔案" class="oaic-step-shot oaic-step-shot--tall" loading="lazy" src="../assets/ptw/06-output-files.png" /></p>
+<p><img alt="第二輪重新檢查 CHK Status" class="oaic-step-shot" loading="lazy" src="../assets/ptw/07-chk-recheck.png" /></p>
+<section class="oaic-visual-step oaic-visual-step--check">
+<div class="oaic-visual-step__number">5</div>
+<div aria-hidden="true" class="oaic-visual-step__icon">📋</div>
+<div>
+    <h2>查看摘要，再按任意鍵關閉</h2>
+    <p><strong>[DONE]</strong> = 已完成｜<strong>[CHECK]</strong> = 尚待完成<br>視窗會停留，不會自動消失。</p>
+  </div>
+</section>
+<p><img alt="第一輪及第二輪處理結果摘要" class="oaic-step-shot oaic-step-shot--tall" loading="lazy" src="../assets/ptw/08-final-summary.png" /></p>
+<p><img alt="執行後：原始 PTW 與新建立的 PRT 檔案" class="oaic-step-shot oaic-step-shot--tall" loading="lazy" src="../assets/ptw/10-files-after.png" /></p>
 </div>
 <details class="oaic-compact-details">
 <summary>處理規則與選用功能</summary>
 <ul>
-<li>只處理 <code>TWSHXHV-PTW-####.pdf</code> 且沒有同編號 exact <code>-PRT.pdf</code> 的檔案。</li>
-<li><code>Cancelled</code>：保留原始 PDF，另建影像化 <code>-PRT.pdf</code>。</li>
-<li>其他狀態：保留內容，只將檔名改為 <code>-CHK.pdf</code> 待人工檢查。</li>
+<li>第一輪：檢查沒有同編號 exact <code>-PRT.pdf</code> 的 <code>TWSHXHV-PTW-####.pdf</code>。</li>
+<li>第一輪 <code>Cancelled</code>：保留原始 PDF，另建影像化 <code>-PRT.pdf</code>。</li>
+<li>第一輪其他狀態：保留內容，只將檔名改為 <code>-CHK.pdf</code>。</li>
+<li>第二輪：重新檢查全部 <code>TWSHXHV-PTW-####-CHK.pdf</code>。</li>
+<li><code>-CHK.pdf</code> 已改為 <code>Cancelled</code>：恢復原檔名並建立影像化 <code>-PRT.pdf</code>。</li>
+<li><code>-CHK.pdf</code> 尚未 <code>Cancelled</code>：檔名不變，列於 <code>[CHECK]</code>。</li>
 <li>不覆寫既有檔案。</li>
 <li>中間 PNG 存於 Windows <code>%TEMP%</code>，完成後自動清理。</li>
 <li>如需逐份開啟，可執行 PowerShell 程式並加上 <code>-OpenEach</code>。</li>
