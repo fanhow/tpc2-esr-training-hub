@@ -2,15 +2,23 @@ site_name: OAIC ESR AutoDoc Hub
 site_description: OAIC ESR automation guides for Training, DPR, 3DLA, MoM and project documentation.
 site_author: OAIC ESR Team
 
+site_url: https://fanhow.github.io/tpc2-esr-training-hub/
+
+repo_url: https://github.com/fanhow/tpc2-esr-training-hub
+repo_name: fanhow/tpc2-esr-training-hub
+edit_uri: edit/main/docs/
+
 theme:
   name: material
   language: en
   logo: assets/oaic-logo.png
   favicon: assets/oaic-logo.png
+
   palette:
     scheme: default
     primary: custom
     accent: custom
+
   features:
     - navigation.tabs
     - navigation.sections
@@ -18,6 +26,7 @@ theme:
     - search.highlight
     - search.suggest
     - content.code.copy
+    - content.action.edit
 
 extra_css:
   - stylesheets/extra.css
@@ -27,34 +36,39 @@ extra_javascript:
 
 nav:
   - Home: index.md
+
   - Step 0 Setup:
       - English: Step-0-SharePoint-OneDrive-Setup-EN.md
       - 中文: Step-0-SharePoint-OneDrive-Setup-ZH.md
+
   - 3DLA Overview:
       - English: 3DLA-Overview-AUTO-Quick-Guide-EN.md
       - 中文: 3DLA-Overview-AUTO-Quick-Guide-ZH.md
+
   - 3DLA MoM:
       - English: 3DLA-MOM-AUTO-Quick-Guide-EN.md
       - 中文: 3DLA-MOM-AUTO-Quick-Guide-ZH.md
+
   - DPR:
       - English: DPR-AUTO-Quick-Guide-EN.md
       - 中文: DPR-AUTO-Quick-Guide-ZH.md
+
   - ESR Training:
       - English: ESR-Training-AUTO-Quick-Guide-EN.md
       - 中文: ESR-Training-AUTO-Quick-Guide-ZH.md
+
   - Create Printed PTW PDF:
       - English: PTW-Cancelled-PDF-Quick-Guide-EN.md
       - 中文: PTW-Cancelled-PDF-Quick-Guide-ZH.md
-
-
-
 
 markdown_extensions:
   - admonition
   - tables
   - attr_list
   - md_in_html
+
   - toc:
       permalink: true
+
   - pymdownx.details
   - pymdownx.superfences
